@@ -6,7 +6,7 @@
 #    By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/30 23:10:10 by gjacqual          #+#    #+#              #
-#    Updated: 2022/05/07 15:31:19 by gjacqual         ###   ########.fr        #
+#    Updated: 2022/05/13 15:34:33 by gjacqual         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ ${OBJS_DIR}:
 			@mkdir -p ${OBJS_DIR}	
 
 ${OBJS_DIR}%.o : %.cpp Makefile | ${OBJS_DIR}  
-				${CXX} -I ${CXXFLAGS} -c  $< -o $@
+				${CXX} ${CXXFLAGS} -c  $< -o $@
 
 #Utils
 clean:

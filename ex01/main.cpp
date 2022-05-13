@@ -6,14 +6,16 @@
 /*   By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 03:24:53 by gjacqual          #+#    #+#             */
-/*   Updated: 2022/05/07 15:32:10 by gjacqual         ###   ########.fr       */
+/*   Updated: 2022/05/13 19:42:57 by gjacqual         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include "pbmain.hpp"
 
 int main(void)
 {
+	PhoneBook phoneBook;
 	std::string cmd;
 	
 	std::cout << PROMPT << PLEASE_ENTER << std::endl;
@@ -29,11 +31,11 @@ int main(void)
 		}
 		else if (cmd == "ADD")
 		{
-			
+			phoneBook.addContact();
 		}
 		else if (cmd == "SEARCH")
 		{
-			
+			phoneBook.searchContact();
 		}
 		else
 			std::cout << PROMPT << ERROR_MSG <<std::endl;
