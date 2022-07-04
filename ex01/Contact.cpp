@@ -6,7 +6,7 @@
 /*   By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 03:50:56 by gjacqual          #+#    #+#             */
-/*   Updated: 2022/05/13 20:43:09 by gjacqual         ###   ########.fr       */
+/*   Updated: 2022/05/28 23:57:57 by gjacqual         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,5 +81,14 @@ void	Contact::setContactData(void)
 	setFirstName(tmpFirst);
 	std::cout << "Enter Last name: \t";
 	std::getline(std::cin, tmpLast);
-	setFirstName(tmpLast);
+	setLastName(tmpLast);
+	std::cout << "Enter Nick name: \t";
+	std::getline(std::cin, tmpNick);
+	setNickName(tmpNick);
+	std::cout << "Enter Phone number: \t";
+	std::getline(std::cin, tmpPhone);
+	setPhoneNumber(tmpPhone);
+	std::cout << "Enter Darkest secret: \t";
+	std::getline(std::cin, tmpSecret);
+	setDarkestSecret(tmpSecret);
 }

@@ -6,7 +6,7 @@
 /*   By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 03:24:53 by gjacqual          #+#    #+#             */
-/*   Updated: 2022/05/13 19:42:57 by gjacqual         ###   ########.fr       */
+/*   Updated: 2022/05/28 23:41:51 by gjacqual         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int main(void)
 {
-	PhoneBook phoneBook;
-	std::string cmd;
+	PhoneBook 	phoneBook;
+	std::string	cmd;
 	
 	std::cout << PROMPT << PLEASE_ENTER << std::endl;
 
@@ -24,7 +24,7 @@ int main(void)
 	{
 		std::cout << PROMPT;
 		std::getline(std::cin, cmd);
-		if (cmd == "EXIT")
+		if (cmd == "EXIT" || std::cin.eof())
 		{
 			std::cout << PROMPT << EXIT_MSG <<std::endl;
 			return 0;
